@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+  
+    <form>
+      <h2>STUDENT REGISTRATION FORM</h2>
+      <label for="fname">FIRST NAME</label>
+      <input type="text" id="fname" name="first" required />
+      <label>(max 30 characters a-z and A-Z)</label><br /><br />
+      <label for="lname">LAST NAME</label>
+      <input type="text" id="lname" name="last" required />
+      <label>(max 30 characters a-z and A-Z)</label><br /><br />
+      <label>DATE OF BIRTH</label>
+      <input type="date" required/><br /><br />
+      <label for="mobile">MOBILE NUMBER</label>
+      <input type="tel" id="mobile" name="number" pattern="[0-9]{10}" required/>
+      <label>(10 digit number)</label><br /><br />
+      <label for="gen">GENDER</label>
+      <input type="radio" id="gen" value="male" name="gender" required/><label>Male</label>
+      <input type="radio" id="gen" value="female" name="gender" required/><label>Female</label
+      ><br /><br />
+      <label>ADDRESS</label>
+      <textarea>Enter your address </textarea requried><br /><br />
+      <label for="cty">CITY</label>
+      <input type="text" id="cty" name="town" /><label>
+        (max 30 characters a-z and A-Z)</label
+      ><br /><br />
+      <label for="pin">PINCODE</label>
+      <input type="number" id="pin" name="code" pattern="[0-9] {6}" /><label>
+        (6 digit number)</label
+      ><br /><br />
+      <label for="state">STATE</label>
+      <input type="text" id="state" name="captial" /><label>
+        (max 30 characters a-z and A-Z)</label
+      ><br /><br />
+      <label for="country">COUNTRY</label>
+      <input
+        type="text"
+        id="country"
+        name="nationality"
+        value="india"
+        readonly
+      /><br /><br />
+      <label>QUALIFICATION</label><br/><br/>
+      <label for="ssc">SSC</label>
+      <input type="text" id="ssc" name="10" placeholder="% (upto 2 decimal places)" requried/><br/><br/>
+      <label for="inter">INTERMEDIATE</label>
+      <input type="text" id="inter" name="int" placeholder="% (upto 2 decimal places)" requried/><br/><br/>
+      <label for="b.tech">B.TECH</label>
+      <input type="text" id="b.tech" name="tech" placeholder="% (upto 2 decimal places)" requried/><br/><br/>
+        <label for="course">COURSE</label><br/><br/>
+        <input type="radio" id="course" name="crs"/><label>Full stack</label>
+        <input type="radio" id="course" name="crs"/><label>Testing</label>
+        <input type="radio" id="course" name="crs"/><label>AWS</label>
+        <input type="radio" id="course" name="crs"/><label>Networking</label>
+        <input type="radio" id="course" name="crs"/><label>SAP</label><br/><br/>
+        <input type="submit" value="submit"/>
+        <input type="submit" value="reset"/>
+      
+      </form>
+  </body>
+</html>
